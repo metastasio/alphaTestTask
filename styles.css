@@ -155,6 +155,19 @@ body {
   .phone__city {
     display: none;
   }
+
+  .hamburger_button {
+    background-color: transparent;
+    border: none;
+    background-image: url('img/Vector.svg');
+    background-position: center center;
+    background-size: 21px 21px;
+    height: 21px;
+    width: 21px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 @layer hero {
