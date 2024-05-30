@@ -304,6 +304,7 @@ body {
   .vacancy > summary::before {
     content: url('img/more.svg');
     padding-left: var(--spacing-s);
+    cursor: pointer;
   }
 
   .vacancy[open] > summary::before {
