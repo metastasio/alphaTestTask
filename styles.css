@@ -624,6 +624,12 @@ body {
     width: 50px;
     height: auto;
   }
+
+  .contacts__yt:hover,
+  .contacts__vk:hover,
+  .contacts__tg:hover {
+    cursor: pointer;
+  }
 }
 
 @layer footer {
