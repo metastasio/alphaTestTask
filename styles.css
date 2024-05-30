@@ -713,7 +713,7 @@ body {
     background-color: transparent;
     border: none;
     border-bottom: var(--border-wide) solid var(--secondary-color);
-    color: var(--secondary-color);
+    color: var(--main-color);
     font-size: 18px;
     margin: 0;
     padding: var(--spacing-s) var(--spacing-smaller) var(--spacing-s);
