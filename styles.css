@@ -18,6 +18,17 @@
   --medium-radius: 20px;
   --min-radius: 5px;
 
+  --spacing-xl: 45px;
+  --spacing-l: 35px;
+  --spacing-ml: 30px;
+  --spacing-standard: 25px;
+  --spacing-m: 20px;
+  --spacing-s: 15px;
+  --spacing-smaller: 10px;
+  --spacing-xs: 5px;
+
+  --border-wide: 3px;
+
   --swiper-pagination-color: var(--main-color);
   --swiper-pagination-bullet-size: 15px;
   --swiper-pagination-bullet-width: 15px;
@@ -59,7 +70,7 @@ body {
 .footer {
   background-color: var(--secondary-background);
   text-align: center;
-  padding: 45px 0 45px;
+  padding: var(--spacing-xl) 0 var(--spacing-xl);
 }
 .advantages,
 .career,
@@ -78,7 +89,7 @@ body {
   h2 {
     color: var(--secondary-color);
     margin: 0;
-    padding: 0 0 35px 0;
+    padding: 0 0 var(--spacing-l) 0;
     font-size: 18px;
     text-transform: uppercase;
   }
@@ -91,7 +102,7 @@ body {
   }
   h4 {
     margin: 0;
-    padding: 15px 0 0;
+    padding: var(--spacing-s) 0 0;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
@@ -102,7 +113,7 @@ body {
   .header__nav {
     background-color: var(--main-background);
     height: 40px;
-    padding: 5px 10px;
+    padding: var(--spacing-xs) var(--spacing-smaller);
     position: relative;
   }
 
@@ -162,7 +173,7 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    padding-bottom: 45px;
+    padding-bottom: var(--spacing-xl);
   }
 
   .hero__section__content p {
@@ -171,7 +182,7 @@ body {
   }
 
   .hero__section__content p {
-    margin-top: 15px;
+    margin-top: var(--spacing-s);
     font-size: 18px;
     line-height: 21.78px;
   }
@@ -186,19 +197,19 @@ body {
   }
 
   .about__company li + li {
-    margin-top: 35px;
+    margin-top: var(--spacing-l);
   }
 
   .about__company li {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    gap: 15px;
+    gap: var(--spacing-s);
   }
 
   .about__block {
     background-color: var(--black);
-    padding: 3px 10px 3px 10px;
+    padding: 3px var(--spacing-smaller) 3px var(--spacing-smaller);
     width: 80px;
     height: 70px;
     border: 1px solid var(--neon);
@@ -210,7 +221,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow(var(--neon) 0 0 5px);
+    filter: drop-shadow(var(--neon) 0 0 var(--spacing-xs));
   }
 
   .about__company li p {
@@ -221,7 +232,7 @@ body {
 
 @layer vacancies {
   .vacancies__title__container {
-    padding: 0 16px;
+    padding: 0 var(--spacing-s);
     max-width: 991px;
     margin: 0 auto;
   }
@@ -231,10 +242,10 @@ body {
   }
 
   .vacancies__section {
-    padding: 0px 16px 35px 16px;
+    padding: 0px var(--spacing-s) var(--spacing-l) var(--spacing-s);
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
+    gap: var(--spacing-smaller);
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -256,15 +267,15 @@ body {
   }
 
   .vacancy__list li + li {
-    margin-top: 15px;
+    margin-top: var(--spacing-s);
   }
 
   .vacancy {
-    border: 3px solid var(--secondary-color);
+    border: var(--border-wide) solid var(--secondary-color);
     border-radius: var(--base-radius);
     min-width: 320px;
-    padding: 30px;
-    margin: 0 10px;
+    padding: var(--spacing-ml);
+    margin: 0 var(--spacing-smaller);
   }
 
   .vacancy > summary {
@@ -279,7 +290,7 @@ body {
 
   .vacancy > summary::before {
     content: url('img/more.svg');
-    padding-left: 15px;
+    padding-left: var(--spacing-s);
   }
 
   .vacancy[open] > summary::before {
@@ -298,7 +309,7 @@ body {
   .vacancy__title,
   .vacancy__salary {
     position: relative;
-    padding-left: 35px;
+    padding-left: var(--spacing-xl);
   }
   .vacancy__title::before {
     position: absolute;
@@ -314,12 +325,12 @@ body {
     background-position: center;
   }
   .vacancy__salary {
-    padding-top: 20px;
+    padding-top: var(--spacing-m);
     color: var(--accent2);
     &::before {
       position: absolute;
       left: 0;
-      top: 21.5px;
+      top: var(--spacing-m);
       bottom: 0;
       margin: auto 0;
       content: '';
@@ -333,21 +344,21 @@ body {
 
   .vacancy__description p {
     margin: 0;
-    padding: 10px 0;
+    padding: var(--spacing-smaller) 0;
     text-align: left;
     font-size: 12px;
     font-weight: bold;
   }
 
   .vacancy__description p:first-child {
-    padding-top: 15px;
+    padding-top: var(--spacing-s);
   }
 
   .vacancy__description ul {
     text-align: left;
     font-size: 12px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: var(--spacing-m);
   }
 
   .vacancy__description ul .vacancy__card {
@@ -356,13 +367,13 @@ body {
   }
 
   .vacancy__description ul .vacancy__card + .vacancy__card {
-    padding-top: 5px;
+    padding-top: var(--spacing-xs);
   }
 }
 
 @layer advantages {
   .advantages__title {
-    padding-bottom: 20px;
+    padding-bottom: var(--spacing-m);
   }
 
   .advantages__list {
@@ -379,8 +390,8 @@ body {
     align-content: center;
     align-items: center;
     text-align: left;
-    padding: 15px 20px;
-    border-bottom: 3px solid var(--secondary-color);
+    padding: var(--spacing-s) var(--spacing-m);
+    border-bottom: var(--border-wide) solid var(--secondary-color);
     font-size: 18px;
     font-weight: 700;
   }
@@ -389,12 +400,12 @@ body {
     font-weight: normal;
     text-align: left;
     margin: 0;
-    padding: 0 20px 16.5px;
+    padding: 0 var(--spacing-m) var(--spacing-s);
   }
 
   .advantages details > summary::before {
     content: url('img/more.svg');
-    padding-left: 15px;
+    padding-left: var(--spacing-s);
     cursor: pointer;
   }
 
@@ -407,7 +418,7 @@ body {
   }
 
   .advantages details[open] > .advantages__description {
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: var(--border-wide) solid var(--secondary-color);
   }
 }
 
@@ -415,28 +426,24 @@ body {
   .goods__buttons {
     display: flex;
     flex-flow: row wrap;
-    padding-bottom: 35px;
-    gap: 5px;
+    padding-bottom: var(--spacing-l);
+    gap: var(--spacing-xs);
     justify-content: center;
   }
 
-  .goods .toggle {
-    color: var(--secondary-color);
-    border-width: 2px;
-    &:hover {
-      color: var(--secondary-background);
-    }
+  .goods .toggle:hover {
+    color: var(--secondary-background);
   }
 
   .goods__gallery {
     display: flex;
     flex-flow: row wrap;
-    gap: 25px;
+    gap: var(--spacing-standard);
   }
 
   .goods__photo {
-    border: 4px solid var(--secondary-color);
-    border-radius: 10px;
+    border: var(--border-wide) solid var(--secondary-color);
+    border-radius: var(--spacing-smaller);
     background-color: var(--light-background);
     width: 165px;
     height: 182px;
@@ -446,7 +453,7 @@ body {
 @layer career {
   .career__text {
     margin: 0;
-    padding: 0 20px;
+    padding: 0 var(--spacing-m);
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
@@ -454,16 +461,16 @@ body {
   }
 
   .career__text + .career__text {
-    margin-top: 15px;
+    margin-top: var(--spacing-s);
   }
 
   .career__text:nth-child(3) {
-    padding-bottom: 35px;
+    padding-bottom: var(--spacing-l);
   }
 
   .representative__job__title {
     margin: 0;
-    padding: 0 0 15px 0;
+    padding: 0 0 var(--spacing-s) 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -478,7 +485,7 @@ body {
   }
 
   .representative__about li + li {
-    margin-top: 15px;
+    margin-top: var(--spacing-s);
   }
 }
 
@@ -489,7 +496,7 @@ body {
     background-repeat: no-repeat;
     background-size: 220%;
     min-height: 560px;
-    padding-bottom: 35px;
+    padding-bottom: var(--spacing-l);
     position: relative;
   }
 
@@ -499,23 +506,23 @@ body {
     line-height: 20px;
     text-align: left;
     margin: 0;
-    padding: 0 20px;
+    padding: 0 var(--spacing-m);
     text-transform: uppercase;
   }
 
   .team__join {
-    border: 3px solid var(--dark-green);
+    border: var(--border-wide) solid var(--dark-green);
     border-radius: var(--medium-radius);
     background-color: var(--transparent-black80);
-    padding: 20px 26px;
-    margin: 0 24px;
+    padding: var(--spacing-m) var(--spacing-standard);
+    margin: 0 var(--spacing-standard);
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
     text-align: left;
-    filter: drop-shadow(var(--accent2) 0 0 10px);
+    filter: drop-shadow(var(--accent2) 0 0 var(--spacing-smaller));
     position: absolute;
-    bottom: 35px;
+    bottom: var(--spacing-l);
     left: 0;
     right: 0;
     margin-left: auto;
@@ -524,7 +531,7 @@ body {
   }
 
   .team__join p {
-    padding: 0 0 20px 0;
+    padding: 0 0 var(--spacing-m) 0;
     margin: 0;
   }
 
@@ -540,12 +547,12 @@ body {
 
   .contacts__buttons {
     margin: 0 auto;
-    padding: 0 23px;
+    padding: 0 var(--spacing-standard);
     display: flex;
     flex-flow: row nowrap;
-    gap: 15px;
+    gap: var(--spacing-s);
     justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: var(--spacing-xl);
   }
 
   .contacts__buttons .toggle {
@@ -555,7 +562,7 @@ body {
   .contacts__list {
     list-style-type: none;
     margin: 0;
-    padding: 0 23px;
+    padding: 0 var(--spacing-standard);
     text-align: left;
   }
 
@@ -568,7 +575,7 @@ body {
   }
 
   .contacts__list li + li {
-    margin-top: 15px;
+    margin-top: var(--spacing-s);
   }
 
   .contacts__list li::before {
@@ -592,10 +599,10 @@ body {
   .contacts__socials {
     list-style-type: none;
     margin: 0;
-    padding: 42px 0 0;
+    padding: var(--spacing-xl) 0 0;
     display: flex;
     flex-flow: row wrap;
-    gap: 30px;
+    gap: var(--spacing-ml);
     justify-content: center;
   }
 
@@ -611,13 +618,13 @@ body {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    padding: 35px 0 0;
+    padding: var(--spacing-l) 0 0;
     margin: 0;
   }
   .policy__links {
     list-style-type: none;
     margin: 0;
-    padding: 30px 30px 15px;
+    padding: var(--spacing-ml) var(--spacing-ml) var(--spacing-s);
     text-align: center;
   }
   .policy__links li a {
@@ -679,7 +686,7 @@ body {
     background-color: transparent;
     border: none;
     margin: 0;
-    padding: 10px;
+    padding: var(--spacing-smaller);
     cursor: pointer;
   }
   .close__modal img {
@@ -689,12 +696,12 @@ body {
 
   .modal__title {
     text-align: center;
-    padding-top: 45px;
+    padding-top: var(--spacing-xl);
   }
 
   .modal__form {
     margin: 0 auto;
-    padding: 0 20px 45px;
+    padding: 0 var(--spacing-m) var(--spacing-xl);
     width: 100%;
   }
 
@@ -705,11 +712,11 @@ body {
     min-height: 50px;
     background-color: transparent;
     border: none;
-    border-bottom: 3px solid var(--secondary-color);
+    border-bottom: var(--border-wide) solid var(--secondary-color);
     color: var(--secondary-color);
     font-size: 18px;
     margin: 0;
-    padding: 15px 10px 12px;
+    padding: var(--spacing-s) var(--spacing-smaller) var(--spacing-s);
   }
 
   .response__label,
@@ -728,21 +735,21 @@ body {
     color: var(--main-color);
     width: 100%;
     font-size: 18px;
-    margin: 0 -3px 0;
-    padding: 15px 0 0;
+    margin: 0 -2px 0;
+    padding: var(--spacing-s) 0 0;
     background-image: url('img/arrow.svg');
     background-repeat: no-repeat;
     background-position: bottom right;
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    padding-right: 20px;
+    padding-right: var(--spacing-m);
   }
 
   .cv,
   .cv__description {
     margin: 0;
-    padding: 15px 10px;
+    padding: var(--spacing-s) var(--spacing-smaller);
     color: var(--main-color);
   }
   .cv {
@@ -763,10 +770,10 @@ body {
   .modal__policy {
     margin: 0;
     margin-left: -15px;
-    padding: 35px 12px 0;
+    padding: var(--spacing-l) 12px 0;
     display: flex;
     flex-flow: row nowrap;
-    gap: 5px;
+    gap: var(--spacing-xs);
   }
 
   .policy__checkbox {
@@ -791,17 +798,17 @@ body {
   }
   .newModalContent {
     text-align: center;
-    padding: 20px;
+    padding: var(--spacing-m);
   }
   .newModalContent p {
     font-size: 18px;
     font-weight: 700;
-    padding: 45px 0 0;
+    padding: var(--spacing-xl) 0 0;
     margin: 0;
   }
 
   .newModalContent p:nth-of-type(2) {
-    padding: 15px 0 150px;
+    padding: var(--spacing-s) 0 150px;
   }
 
   .newModalContent img.approved {
@@ -809,7 +816,7 @@ body {
     width: 90px;
     height: 90px;
     margin: 0 auto;
-    padding: 5px;
+    padding: var(--spacing-xs);
   }
 }
 
@@ -817,13 +824,13 @@ body {
   .request {
     background-color: var(--accent);
     max-height: 40px;
-    padding: 10px 36px;
+    padding: var(--spacing-smaller) var(--spacing-l);
     border-radius: var(--base-radius);
     border: none;
     color: var(--main-color);
     font-weight: 700;
     font-size: 12px;
-    margin: 35px 0 0;
+    margin: var(--spacing-l) 0 0;
     text-transform: uppercase;
     cursor: pointer;
     &:hover {
@@ -836,7 +843,7 @@ body {
     background: url('img/more.svg');
     width: 25px;
     height: 25px;
-    padding: 10px;
+    padding: var(--spacing-smaller);
     cursor: pointer;
   }
 
@@ -844,10 +851,10 @@ body {
     display: block;
     text-transform: uppercase;
     border-radius: var(--min-radius);
-    border: 3px solid var(--secondary-color);
+    border: var(--border-wide) solid var(--secondary-color);
     background-color: transparent;
     color: var(--secondary-color);
-    padding: 0px 16px 0px 16px;
+    padding: 0 var(--spacing-s) 0 var(--spacing-s);
     font-size: 12px;
     font-weight: 700;
     min-height: 30px;
