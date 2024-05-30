@@ -11,7 +11,7 @@ const img = document.createElement('img');
 const newButton = document.createElement('button');
 
 newButton.textContent = 'На главную';
-newButton.classList.add('request');
+newButton.classList.add('API__request');
 img.src = 'img/approved.svg';
 img.classList.add('approved');
 newContentDiv.classList.add('newModalContent');

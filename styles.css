@@ -535,7 +535,7 @@ body {
     margin: 0;
   }
 
-  .team__join .request {
+  .team__join .API__request {
     margin: 0;
   }
 }
@@ -762,7 +762,7 @@ body {
     font-size: 10px;
   }
 
-  .modal__form .request.green {
+  .modal__form .API__request.green {
     margin: 0;
     background-color: var(--accent2) !important;
   }
@@ -821,7 +821,7 @@ body {
 }
 
 @layer buttons {
-  .request {
+  .API__request {
     background-color: var(--accent);
     max-height: 40px;
     padding: var(--spacing-smaller) var(--spacing-l);
