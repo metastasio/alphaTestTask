@@ -476,67 +476,82 @@
           <img src="img/close.svg" alt="Нажмите, чтобы закрыть" />
         </button>
       </div>
-      <h2 class="modal__title">Заполните анкету</h2>
-      <div class="modal__content">
-        <form class="modal__form">
-          <label class="sr-only" for="name">Ф.И.О</label>
-          <input
-            id="name"
-            class="modal__input"
-            type="text"
-            placeholder="Ф.И.О"
-          />
-          <label class="sr-only" for="phone">Телефон</label>
-          <input
-            id="phone"
-            class="modal__input"
-            type="tel"
-            placeholder="Телефон"
-          />
-          <div class="response">
-            <label id="response" class="response__label" for="phone"
-              >Отклик на вакансию</label
-            >
-            <select class="response__select" id="response">
-              <option value="">Выберите вакансию</option>
-            </select>
-          </div>
-
-          <p class="cv">Ваше резюме</p>
-          <p class="cv__description">
-            Есть резюме в формате .pdf или .doc? <br />
-            Приложите и отправьте его нам.
-          </p>
-
-          <button class="API__request green" type="button">
-            Загрузить файл
-          </button>
-
-          <div class="modal__policy">
-            <label class="sr-only" for="policy"
-              >Политика конфиденциальности</label
-            >
+      <div class="first__step__modal">
+        <h2 class="modal__title">Заполните анкету</h2>
+        <div class="modal__content">
+          <form class="modal__form">
+            <label class="sr-only" for="name">Ф.И.О</label>
             <input
-              class="policy__checkbox"
-              type="checkbox"
-              id="policy"
-              name="policy"
+              id="name"
+              class="modal__input"
+              type="text"
+              placeholder="Ф.И.О"
             />
-            <p class="policy__text">
-              Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой
-              конфиденциальности, Согласием на обработку персональных данных
-              физическим лицом. Я осознаю, что даю Согласие на обработку
-              персональных данных для использования предоставляемых возможностей
-              Веб-сервиса. <br />
-              <br />
-              Я достиг(ла) 18-летнего возраста
+            <label class="sr-only" for="phone">Телефон</label>
+            <input
+              id="phone"
+              class="modal__input"
+              type="tel"
+              placeholder="Телефон"
+            />
+            <div class="response">
+              <label id="response" class="response__label" for="phone"
+                >Отклик на вакансию</label
+              >
+              <select class="response__select" id="response">
+                <option value="">Выберите вакансию</option>
+              </select>
+            </div>
+
+            <p class="cv">Ваше резюме</p>
+            <p class="cv__description">
+              Есть резюме в формате .pdf или .doc? <br />
+              Приложите и отправьте его нам.
             </p>
-          </div>
-          <div class="send__button">
-            <button class="API__request send__request">ОТПРАВИТЬ АНКЕТУ</button>
-            <button class="API__request to__main hidden">НА ГЛАВНУЮ</button>
-          </div>
-        </form>
+
+            <button class="API__request green" type="button">
+              Загрузить файл
+            </button>
+
+            <div class="modal__policy">
+              <label class="sr-only" for="policy"
+                >Политика конфиденциальности</label
+              >
+              <input
+                class="policy__checkbox"
+                type="checkbox"
+                id="policy"
+                name="policy"
+              />
+              <p class="policy__text">
+                Я прочитал(а), ознакомился(лась) и согласен(на) с Политикой
+                конфиденциальности, Согласием на обработку персональных данных
+                физическим лицом. Я осознаю, что даю Согласие на обработку
+                персональных данных для использования предоставляемых
+                возможностей Веб-сервиса. <br />
+                <br />
+                Я достиг(ла) 18-летнего возраста
+              </p>
+            </div>
+            <div class="send__button">
+              <button class="API__request send__request">
+                ОТПРАВИТЬ АНКЕТУ
+              </button>
+              
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="second__step__modal hidden">
+        <h2 class="modal__title">АНКЕТА ОТПРАВЛЕНА</h2>
+        <img class="approved" src="img/approved.svg" alt="Анкета отправлена" />
+        <div class="modal__content">
+          <p>
+            Благодарим за ваш отклик и интерес. <br /><br />
+            Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.
+          </p>
+          <button class="API__request to__main">НА ГЛАВНУЮ</button>
+        </div>
       </div>
     </section>
 
