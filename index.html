@@ -509,9 +509,10 @@
               Приложите и отправьте его нам.
             </p>
 
-            <button class="API__request green" type="button">
-              Загрузить файл
-            </button>
+            <label class="upload__cv API__request" for="upload__cv"
+              >Загрузить файл</label
+            >
+            <input id="upload__cv" type="file" hidden />
 
             <div class="modal__policy">
               <label class="sr-only" for="policy"
@@ -537,7 +538,6 @@
               <button class="API__request send__request">
                 ОТПРАВИТЬ АНКЕТУ
               </button>
-              
             </div>
           </form>
         </div>
@@ -545,7 +545,11 @@
       <div class="second__step__modal hidden">
         <h2 class="modal__title">АНКЕТА ОТПРАВЛЕНА</h2>
         <div class="modal__content">
-        <img class="approved" src="img/approved.svg" alt="Анкета отправлена" />
+          <img
+            class="approved"
+            src="img/approved.svg"
+            alt="Анкета отправлена"
+          />
           <p>
             Благодарим за ваш отклик и интерес. <br /><br />
             Мы изучим вашу анкету и свяжемся с вами в течении 2х дней.

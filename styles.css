@@ -755,7 +755,7 @@ body {
     color: var(--main-color);
     width: 100%;
     font-size: 18px;
-    margin: 0 -2px 0;
+    margin: 0;
     padding: var(--spacing-s) 0 0;
     background-image: url('img/arrow.svg');
     background-repeat: no-repeat;
@@ -779,18 +779,20 @@ body {
 
   .cv__description {
     padding-top: 0;
+    margin-bottom: var(--spacing-smaller);
     font-size: 10px;
   }
 
-  .modal__form .API__request.green {
+  .upload__cv.API__request {
     margin: 0;
-    background-color: var(--accent2) !important;
+    margin: 0;
+    background-color: var(--accent2);
   }
 
   .modal__policy {
     margin: 0;
-    margin-left: -15px;
-    padding: var(--spacing-l) 12px 0;
+    margin-left: 20px;
+    padding: 0;
     display: flex;
     flex-flow: row nowrap;
     gap: var(--spacing-xs);
@@ -939,7 +941,7 @@ body {
   }
 
   .first__swiper.swiper-backface-hidden .swiper-slide {
-    transform: scale(0.84) translateZ(0);
+    transform: scale(0.84) translateZ(0) !important;
   }
 
   .swiper-slide.swiper-slide-active {
