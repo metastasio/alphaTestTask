@@ -254,7 +254,7 @@ body {
     text-align: left;
   }
 
-  .vacancies__section {
+  .vacancies__buttons {
     padding: 0px var(--spacing-s) var(--spacing-l) var(--spacing-s);
     display: flex;
     flex-flow: row wrap;
@@ -790,8 +790,7 @@ body {
   }
 
   .modal__policy {
-    margin: 0;
-    margin-left: 20px;
+    margin: var(--spacing-l) 0 0 -5px;
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
@@ -887,7 +886,7 @@ body {
     }
   }
 
-  .toggle.active {
+  .toggle__active {
     background-color: var(--secondary-color);
     color: var(--main-background);
     cursor: text;
