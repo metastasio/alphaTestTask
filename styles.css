@@ -816,22 +816,22 @@ body {
     align-items: center;
     align-content: center;
   }
-  .newModalContent {
+  .second__step__modal .modal__content {
     text-align: center;
     padding: var(--spacing-m);
   }
-  .newModalContent p {
+  .second__step__modal p {
     font-size: 18px;
     font-weight: 700;
     padding: var(--spacing-xl) 0 0;
     margin: 0;
   }
 
-  .newModalContent p:nth-of-type(2) {
+  .second__step__modal p {
     padding: var(--spacing-s) 0 150px;
   }
 
-  .newModalContent img.approved {
+  .second__step__modal img.approved {
     display: block;
     width: 90px;
     height: 90px;
@@ -895,6 +895,7 @@ body {
 @layer swiper {
   .swiper-wrapper {
     position: relative;
+    cursor: grab;
   }
 
   .swiper__button__next,
