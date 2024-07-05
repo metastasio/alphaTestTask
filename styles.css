@@ -177,7 +177,7 @@ body {
     background-image: url('img/Hero_banner.webp');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 220%;
+    background-size: cover;
   }
 
   .hero__section__content {
